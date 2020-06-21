@@ -1,0 +1,243 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "swooping"
+Date ""
+Rev "0.1"
+Comp "Josh Johnson"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 5E2031A4
+P 6450 7500
+F 0 "LOGO2" H 6450 7886 50  0000 C CNN
+F 1 "OSHW_FMask" H 6450 7795 50  0000 C CNN
+F 2 "josh-logos:OSHW_Logo_3.6x3.6_F.Mask" H 6450 7500 50  0001 C CNN
+F 3 "~" H 6450 7500 50  0001 C CNN
+	1    6450 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole LOGO1
+U 1 1 5E204886
+P 5900 7200
+F 0 "LOGO1" H 5900 7437 50  0000 C CNN
+F 1 "Josh-Details" H 5900 7346 50  0000 C CNN
+F 2 "josh-logos:josh-details" H 5900 7200 50  0001 C CNN
+F 3 "~" H 5900 7200 50  0001 C CNN
+	1    5900 7200
+	1    0    0    -1  
+$EndComp
+Text Notes 5550 6850 0    100  ~ 0
+Logos / Markings
+$Comp
+L Mechanical:MountingHole LOGO4
+U 1 1 5E2057DD
+P 5900 7650
+F 0 "LOGO4" H 5900 7887 50  0000 C CNN
+F 1 "Josh-Logo" H 5900 7796 50  0000 C CNN
+F 2 "josh-logos:josh-johnson-logo-8_6x1_5" H 5900 7650 50  0001 C CNN
+F 3 "~" H 5900 7650 50  0001 C CNN
+	1    5900 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E47A5ED
+P 1700 2700
+F 0 "R1" H 1770 2746 50  0000 L CNN
+F 1 "1K" H 1770 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1630 2700 50  0001 C CNN
+F 3 "~" H 1700 2700 50  0001 C CNN
+	1    1700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E47A756
+P 1700 3100
+F 0 "R2" H 1770 3146 50  0000 L CNN
+F 1 "470K" H 1770 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1630 3100 50  0001 C CNN
+F 3 "~" H 1700 3100 50  0001 C CNN
+	1    1700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E47AB86
+P 1700 3500
+F 0 "C1" H 1815 3546 50  0000 L CNN
+F 1 "1u" H 1815 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1738 3350 50  0001 C CNN
+F 3 "~" H 1700 3500 50  0001 C CNN
+	1    1700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E47AE58
+P 2900 3350
+F 0 "R3" H 2970 3396 50  0000 L CNN
+F 1 "470R" H 2970 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2830 3350 50  0001 C CNN
+F 3 "~" H 2900 3350 50  0001 C CNN
+	1    2900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E47B311
+P 2900 3700
+F 0 "D1" V 2939 3583 50  0000 R CNN
+F 1 "LED" V 2848 3583 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 2900 3700 50  0001 C CNN
+F 3 "~" H 2900 3700 50  0001 C CNN
+	1    2900 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L swooping:SAO J1
+U 1 1 5E47C5AF
+P 4000 3300
+F 0 "J1" H 3800 3550 50  0000 L CNN
+F 1 "SAO" H 3800 3450 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 4000 3450 50  0001 C CNN
+F 3 "" H 4000 3450 50  0001 C CNN
+	1    4000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2900 1700 2900
+Wire Wire Line
+	1700 2900 1700 2850
+Wire Wire Line
+	1700 2900 1700 2950
+Connection ~ 1700 2900
+Wire Wire Line
+	2050 3300 2000 3300
+Wire Wire Line
+	1700 3300 1700 3350
+Wire Wire Line
+	1700 3250 1700 3300
+Connection ~ 1700 3300
+Wire Wire Line
+	2050 3100 2000 3100
+Wire Wire Line
+	2000 3100 2000 3300
+Connection ~ 2000 3300
+Wire Wire Line
+	2000 3300 1700 3300
+Wire Wire Line
+	1700 2500 1700 2550
+Wire Wire Line
+	2600 2650 2600 2600
+Wire Wire Line
+	2600 2600 2450 2600
+Wire Wire Line
+	2450 2600 2450 2650
+Connection ~ 2450 2600
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5E481D38
+P 2450 2450
+F 0 "#PWR0101" H 2450 2300 50  0001 C CNN
+F 1 "+3V3" H 2450 2600 50  0000 C CNN
+F 2 "" H 2450 2450 50  0001 C CNN
+F 3 "" H 2450 2450 50  0001 C CNN
+	1    2450 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2500 2450 2500
+Connection ~ 2450 2500
+Wire Wire Line
+	2450 2500 2450 2600
+Wire Wire Line
+	2450 2450 2450 2500
+Wire Wire Line
+	2800 3100 2900 3100
+Wire Wire Line
+	2900 3100 2900 3200
+Wire Wire Line
+	2900 3500 2900 3550
+Wire Wire Line
+	2450 3550 2450 3900
+Wire Wire Line
+	2900 3850 2900 3900
+$Comp
+L power:GND #PWR0102
+U 1 1 5E487EA5
+P 2450 3950
+F 0 "#PWR0102" H 2450 3700 50  0001 C CNN
+F 1 "GND" H 2455 3777 50  0000 C CNN
+F 2 "" H 2450 3950 50  0001 C CNN
+F 3 "" H 2450 3950 50  0001 C CNN
+	1    2450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3900 2450 3900
+Connection ~ 2450 3900
+Wire Wire Line
+	2450 3900 2450 3950
+Wire Wire Line
+	2450 3900 1700 3900
+Wire Wire Line
+	1700 3900 1700 3650
+NoConn ~ 4300 3250
+NoConn ~ 4300 3350
+NoConn ~ 2600 3550
+Wire Wire Line
+	3700 3350 3600 3350
+Wire Wire Line
+	3600 3350 3600 3450
+$Comp
+L power:GND #PWR0103
+U 1 1 5E491998
+P 3600 3450
+F 0 "#PWR0103" H 3600 3200 50  0001 C CNN
+F 1 "GND" H 3605 3277 50  0000 C CNN
+F 2 "" H 3600 3450 50  0001 C CNN
+F 3 "" H 3600 3450 50  0001 C CNN
+	1    3600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3250 3600 3250
+Wire Wire Line
+	3600 3250 3600 3150
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5E496496
+P 3600 3150
+F 0 "#PWR0104" H 3600 3000 50  0001 C CNN
+F 1 "+3V3" H 3600 3300 50  0000 C CNN
+F 2 "" H 3600 3150 50  0001 C CNN
+F 3 "" H 3600 3150 50  0001 C CNN
+	1    3600 3150
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 2200 0    100  ~ 0
+555 Timer
+Text Notes 3400 2900 0    100  ~ 0
+SAO Connector
+$Comp
+L swooping:555 U1
+U 1 1 5E4A7D11
+P 2450 3100
+F 0 "U1" H 2150 3600 50  0000 L CNN
+F 1 "555" H 2150 3500 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2450 3350 50  0001 C CNN
+F 3 "" H 2450 3350 50  0001 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
